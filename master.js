@@ -117,13 +117,12 @@ function startApp() {
         elState('wait', 0);
         nav('/waiting');
         ses_state = "waiting_b";
-
     } else if (role === "B") {
         elState('invite', 0);
-        nav('/waiting');
         ses_state = "waiting_a";
         let d = params.get('session');
         details_a = JSON.parse(d);
+        nav('/waiting');
         document.getElementById('inviting').innerHTML = `Connecting to ${details_a.who}...`;
     }
     new_flow();
