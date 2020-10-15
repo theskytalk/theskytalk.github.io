@@ -1,0 +1,37 @@
+{
+  "name": "SkyTalk",
+  "short_name": "SkyTalk",
+  "background_color": "#fff",
+  "theme_color": "#6370F6",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/sr.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/sr.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    { 
+      "src": "/assets/srt.png"
+    }
+  ],
+
+  "skyroutes": {
+
+    "assets": [
+      "/assets/srt.png",
+      "/lib/webpush-bundle.js"
+    ],
+    
+    "update_interval": "0",
+    "hot_reload": "off",
+    "route_error": "free",
+    "force_install": "false",
+    "force_network": "false"
+  }
+}

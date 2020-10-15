@@ -1,0 +1,153 @@
+<section id="home" class="irt">
+    <!-- <center>
+        <h2>SkyTalk</h2>
+        <p class="subtitle">OpenSource Server-less Exchange</p>
+    </center>
+
+  
+
+    <div>
+        <p>Dependencies</p>
+        <br>
+        <ul>
+            <li id="sw-stat">PWA Support </li>
+            <li id="not-stat">Notifications Access <button id="not-grant" onclick="new_flow();">Grant</button></li>
+        </ul>
+    </div>
+    <br>
+    <div>
+        <div id="invite"></div>
+        <br>
+        <br>
+        <center>
+            <input placeholder="Enter your name" id="name">
+        </center>
+        
+
+
+    
+    </div>
+
+
+    <center>
+        <button id="start" class="start" disabled onclick="create_session();">Start</button>
+    </center> -->
+
+
+    <div class="home-wrap">
+        <img src="assets/art.png" class="home-art">
+        <h2 class="home-title">SkyTalk</h2>
+        <p class="home-desc">Server-less One to One Messaging</p>
+        <input class="home-input" id="name" placeholder="Enter your name" autocomplete="off" autocapitalize="false">
+        <button class="home-btn" onclick="startApp()">GET STARTED</button>
+    </div>
+
+</section>
+
+<section id="waiting" class="rt">
+    <img src="assets/art_wait.png" class="home-art">
+    <h2 class="waiting-title">SkyTalk</h2>
+
+    <div id="invite" class="waiting-wrap">
+        <p class="waiting-desc">Share session url with peer through a trusted medium</p>
+        <br>
+        <input id="ses-url" autocomplete="off" disabled><button id="copy" onclick="copy_session();"
+            disabled>LOADING</button>
+    </div>
+
+    <div id="wait" class="waiting-wrap">
+        <br>
+        <p class="waiting-desc" id="inviting"></p>
+        <br>
+    </div>
+
+</section>
+
+<section id="talking" class="rt">
+    <div class="talking-top">
+        <button id="talking-back" onclick="nav('reading');readSessionRef();">
+            <span class="material-icons">
+                arrow_back
+            </span>
+        </button>
+        <div class="talking-to" id="talkingto">
+
+        </div>
+        <div class="talking-status">
+            <!-- <div id="slowmode"><span class="material-icons">
+                    notification_important
+                </span></div> -->
+            <div id="connected">
+                <span class="material-icons">
+                    settings_ethernet
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="bottom-button" onclick="scrollToBottom();">
+        <span class="material-icons">
+            keyboard_arrow_down
+        </span>
+    </div>
+    <div id="display">
+        <div id="chat">
+            <!-- <div class="l">Hello</div>
+            <div class="l">Hi there</div>
+            <div class="r">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="r">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="r">Hi there</div>
+            <div class="r">Hi there</div>
+
+            <div class="l">Hi there</div>
+            <div class="r">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="r">Hi there</div>
+            <div class="r">Hi there</div>
+
+            <div class="l">Hi there</div>
+            <div class="r">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="r">Hi there</div>
+            <div class="r">Hi there</div>
+
+            <div class="l">Hi there</div>
+            <div class="r">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="l">Hi there</div>
+            <div class="l">Hi there</div> -->
+        </div>
+    </div>
+    <div id="area">
+        <input placeholder="Enter message" id="msg">
+        <button onclick="sendMsg();">SEND</button>
+    </div>
+</section>
+
+<section id="reading" class="rt">
+    <h2>SkyTalk</h2>
+    <div class="reading-bottom">
+        <button onclick="nav('');">NEW CHAT</button>
+    </div>
+
+    <div class="reading-body" id="reading-body">
+        <!-- <div class="reading-tile">Aakash</div>
+        <div class="reading-tile">Aakash</div> -->
+        <!-- <div class="reading-tile">Aakash</div>
+        <div class="reading-tile">Aakash</div>
+        <div class="reading-tile">Aakash</div>
+        <div class="reading-tile">Aakash</div>
+        <div class="reading-tile">Aakash</div>
+        <div class="reading-tile">Aakash</div>
+        <div class="reading-tile">Aakash</div>
+        <div class="reading-tile">Aakash</div>
+        <div class="reading-tile">Aakash</div> -->
+    </div>
+</section>

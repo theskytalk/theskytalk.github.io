@@ -1,0 +1,167 @@
+* {
+    font-family: 'Helvetica';
+    user-select: none;
+}
+
+:root {
+    --blk: rgb(78, 78, 78);
+    --blkd: rgb(41, 41, 41);
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#home, #waiting {
+    padding: 30px;
+}
+
+#home h2, #waiting h2 {
+    font-family: 'Anton';
+    font-size: 200%;
+}
+
+.subtitle {
+    margin-bottom: 20%;
+}
+
+#home ul {
+    padding: 20px;
+}
+
+#home ul li {
+    /* padding-bottom: 20px; */
+    line-height: 40px;
+    /* padding-top: 10px; */
+}
+
+#home input {
+    padding: 8px;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 105%;
+    border-radius: 10px;
+
+
+}
+
+.start {
+    margin-top: 35%;
+    width: 80%;
+    padding: 15px;
+    font-size: 105%;
+    text-transform: uppercase;
+    background: rgb(97, 240, 14);
+    border-radius: 10px;
+
+
+}
+
+#not-grant {
+    margin-left: 5px;
+    padding: 5px;
+    background: rgb(97, 240, 14);
+    width: 30%;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+#waiting textarea {
+    resize: none;
+    background: beige;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#ses-url {
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+    background: beige;
+}
+
+#copy {
+    margin-left: 10px;
+    background: rgb(240, 217, 14);
+    min-width: 40%;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+#talking header {
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 120%;
+    padding: 10px;
+    padding-top: 20px;
+    /* position: fixed; */
+    /* top: 0; */
+}
+#area {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    /* padding: 30px; */
+    text-align: center;
+    background: #fff;
+}
+
+#area input {
+    padding: 20px;
+    width: 70%;
+    height: 60px;
+    font-size: 105%;
+}
+
+#area button {
+    height: 60px;
+
+    padding: 20px;
+    /* width: 14%; */
+    padding-left: 30px;
+    padding-right: 30px;
+    text-transform: uppercase;
+}
+
+#display {
+    padding: 20px;
+    /* padding-top: 80px; */
+}
+
+.l {
+    clear: both;
+    float: left;
+    padding: 20px;
+    background: rgb(227, 255, 184);
+    /* width: 80%; */
+    /* margin-right: 20%; */
+}
+
+.r {
+    margin-top: 10px;
+    width: 80%;
+    float: right;
+    padding: 20px;
+    margin-left: 20%;
+    text-align: right;
+
+
+}
+
+
+@media screen and (min-width: 900px) {
+   
+}
+
+@media (prefers-color-scheme: dark) {
+
+    
+}
+  

@@ -1,0 +1,434 @@
+* {
+    font-family: 'Helvetica';
+    user-select: none;
+}
+
+:root {
+    --blk: rgb(78, 78, 78);
+    --blkd: rgb(41, 41, 41);
+}
+
+body {
+    background: rgb(244, 248, 254);
+}
+
+.home-wrap {
+    min-height: calc(100vh - 56px);
+    width: 100%;
+    background: rgb(244, 248, 254);
+    text-align: center;
+}
+
+.home-art {
+    width: 100%;
+}
+
+.home-title, .waiting-title {
+    font-size: 230%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(126, 128, 158);
+    margin: 16% 0 30px 0;
+}
+
+.home-desc, .waiting-desc {
+    font-size: 120%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    color: rgb(151, 154, 190);
+    margin: 20px 0 30px 0;
+}
+
+button:focus, button:hover {
+    opacity: 0.85;
+}
+
+.home-btn {
+    width: 85%;
+    border-radius: 30px;
+    padding: 16px;
+    background: rgb(99, 112, 246);
+    color: rgb(250, 250, 250);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 105%;
+    /* position: fixed; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    margin-top: 20%;
+    margin-bottom: 30px;
+    bottom: 70px;
+}
+
+.home-input {
+    padding: 15px;
+    width: 85%;
+    margin-top: 5px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-size: 105%;
+    border-radius: 30px;
+}
+
+/* */
+
+.waiting-wrap {
+    text-align: center;
+}
+
+.waiting-title {
+    text-align: center;
+}
+
+#ses-url {
+    padding: 20px;
+    width: 50%;
+    margin-top: 5px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-size: 85%;
+    border-radius: 30px;
+}
+
+#copy {
+    height: 60px;
+    width: 25%;
+    margin-left: 12px;
+    padding: 10px;
+    border-radius: 30px;
+    background: rgb(99, 112, 246);
+    color: rgb(250, 250, 250);
+}
+
+#ses-url:disabled {
+    background-color: #fff;
+}
+
+/* chat ui */
+
+#talking {
+    /* padding-top: 60px; */
+    /* height: 100vh; */
+}
+
+#talking .material-icons {
+    color: rgb(54, 54, 54) !important;
+}
+
+.talking-top {
+    background-color: rgb(244, 248, 254);
+    padding: 10px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+#talking-back {
+    background-color: transparent;
+    float: left;
+}
+
+.talking-to p {
+    /* display: inline-block; */
+    margin-left: 20px;
+    margin-top: 1px;
+    float: left;
+    font-family: 'IBM Plex Sans';
+    color: rgb(54, 54, 54) !important;
+    /* background-color: red; */
+}
+
+#connected, #slowmode {
+    float: right;
+}
+
+.l {
+    clear: both;
+    float: left;
+    background: rgb(99, 112, 246);
+    color: #fff;
+    padding: 15px;
+    border-radius: 22px;
+    margin-bottom: 5px;
+    word-break: break-all;
+    max-width: 65%;
+
+}
+
+@keyframes color-change {
+    0% {
+        background: rgb(185 185 185 / 33%)
+    }50% {
+        background: rgb(111 107 107 / 33%);
+    }
+    100% {
+        background: rgb(185 185 185 / 33%)
+    }
+}
+
+.lt {
+    clear: both;
+    float: left;
+    color:#000;
+    padding: 15px;
+    border-radius: 22px;
+    margin-bottom: 5px;
+    animation: color-change 2s ease-in infinite alternate;
+    word-break: break-all;
+    max-width: 65%;
+
+}
+
+
+
+.r {
+    background: #fff;
+    color: #000;
+    padding: 15px;
+    clear: both;
+    float: right;
+    border-radius: 22px;
+    margin-bottom: 5px;
+    word-break: break-all;
+}
+
+#area {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    bottom: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+#msg {
+    padding: 15px;
+    width: 70%;
+}
+
+#area button {
+    padding: 15px;
+    width: 20%;
+    border-radius: 22px;
+    color: rgb(59, 59, 59);
+    border: solid 1px rgb(235, 235, 235);
+    background: rgb(255, 255, 255);
+}
+
+#display {
+    /* background-color: yellowgreen; */
+    height: 84vh;
+    overflow: auto;
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    /* overscroll-behavior: contain; */
+}
+
+#display>div>div:last-child {
+    /* scroll-snap-align: end;
+    scroll-margin-block-end: 20px; */
+}
+
+.scroll-on {
+    /* scroll-snap-type: y proximity; */
+}
+
+.scroll-off {
+    /* scroll-snap-type: y none; */
+}
+
+#bottom-button {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    line-height: 47px;
+    background: darkgrey;
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    text-align: center;
+    display: none;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 1px 0px 10px -2px rgba(97, 97, 97, 1);
+}
+
+#bottom-button .material-icons {
+    color: #fff !important;
+}
+
+#reading {}
+
+#reading h2 {
+    font-size: 180%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(126, 128, 158);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    /* margin: 16% 0 30px 0; */
+}
+
+.reading-body {
+    padding: 15px;
+    padding-top: 80px;
+}
+
+.reading-bottom {
+    position: fixed;
+    bottom: 40px;
+    right: 15px;
+    height: 100;
+    width: 100;
+    border-radius: 22px;
+    box-shadow: 1px 0px 10px -2px rgba(97, 97, 97, 1);
+    padding: 15px;
+    background: rgb(99, 112, 246);
+    transition: all 0.4s;
+}
+
+.reading-bottom:hover, .reading-bottom:focus {
+    background: rgb(120, 131, 255);
+    box-shadow: 1px 0px 4px -2px rgba(97, 97, 97, 1);
+}
+
+.reading-bottom button {
+    background: transparent;
+    color: #fff;
+}
+
+.reading-tile {
+    padding: 30px;
+    background: #fff;
+    color: rgb(92, 92, 92);
+    border-radius: 22px;
+    margin-bottom: 10px;
+    font-size: 110%;
+}
+
+.reading-body center {
+    padding: 20px;
+    background: #fff;
+    color: rgb(124, 124, 124);
+}
+
+@media screen and (min-width: 900px) {}
+
+@media (prefers-color-scheme: dark) {}
+
+/* DESKTOP, LAPTOP & TABLETS */
+
+@media (min-width: 1281px) {
+    #sr_main {
+        display: none !important;
+    }
+    #sr_block {
+        display: block !important;
+        margin: 0 auto;
+        width: 300px;
+        line-height: 34px;
+        margin-top: 10%;
+        padding: 30px;
+        background-color: #eeeeee;
+        font-size: 98%;
+    }
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #sr_main {
+        display: none !important;
+    }
+    #sr_block {
+        display: block !important;
+        margin: 0 auto;
+        width: 300px;
+        line-height: 34px;
+        margin-top: 10%;
+        padding: 30px;
+        background-color: #eeeeee;
+        font-size: 98%;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #sr_main {
+        display: none !important;
+    }
+    #sr_block {
+        display: block !important;
+        margin: 0 auto;
+        width: 300px;
+        line-height: 34px;
+        margin-top: 10%;
+        padding: 30px;
+        background-color: #eeeeee;
+        font-size: 98%;
+    }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #sr_main {
+        display: none !important;
+    }
+    #sr_block {
+        display: block !important;
+        margin: 0 auto;
+        width: 300px;
+        line-height: 34px;
+        margin-top: 10%;
+        padding: 30px;
+        background-color: #eeeeee;
+        font-size: 98%;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #sr_main {
+        display: block !important;
+    }
+    #sr_block {
+        display: none !important;
+    }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #sr_main {
+        display: block !important;
+    }
+    #sr_block {
+        display: none !important;
+    }
+}
